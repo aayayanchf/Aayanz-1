@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a0a0a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: red;               /* Lal rang */
+    font-size: 90px;
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+    animation: glow 2.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px red;
+    }
+    to {
+        text-shadow: 0 0 40px red, 0 0 60px red;
+    }
+}
